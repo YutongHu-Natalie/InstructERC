@@ -72,7 +72,7 @@ gradio_client==0.2.7
 grpcio==1.54.2
 h11==0.14.0
 hjson==3.1.0
-hope==3.6.4
+hope==0.7.3
 httpcore==0.17.2
 httpx==0.24.1
 huggingface-hub==0.14.1
@@ -123,7 +123,7 @@ mdtex2html==1.2.0
 mdurl==0.1.2
 mistune==2.0.5
 mpmath==1.3.0
-mt-tritonclient==1.0.4
+# mt-tritonclient==1.0.4  # Package not found - consider using 'tritonclient' instead
 multidict==6.0.4
 multiprocess==0.70.14
 multivolumefile==0.2.3
@@ -142,19 +142,20 @@ nodeenv==1.8.0
 notebook==6.5.4
 notebook_shim==0.2.3
 numpy==1.24.3
-nvidia-cublas-cu11==11.10.3.66
-nvidia-cuda-cupti-cu11==11.7.101
-nvidia-cuda-nvrtc-cu11==11.7.99
-nvidia-cuda-runtime-cu11==11.7.99
-nvidia-cudnn-cu11==8.5.0.96
-nvidia-cufft-cu11==10.9.0.58
-nvidia-curand-cu11==10.2.10.91
-nvidia-cusolver-cu11==11.4.0.1
-nvidia-cusparse-cu11==11.7.4.91
-nvidia-nccl-cu11==2.14.3
-nvidia-nvtx-cu11==11.7.91
+# NVIDIA CUDA packages - these are installed automatically by PyTorch
+# nvidia-cublas-cu11==11.10.3.66
+# nvidia-cuda-cupti-cu11==11.7.101
+# nvidia-cuda-nvrtc-cu11==11.7.99
+# nvidia-cuda-runtime-cu11==11.7.99
+# nvidia-cudnn-cu11==8.5.0.96
+# nvidia-cufft-cu11==10.9.0.58
+# nvidia-curand-cu11==10.2.10.91
+# nvidia-cusolver-cu11==11.4.0.1
+# nvidia-cusparse-cu11==11.7.4.91
+# nvidia-nccl-cu11==2.14.3
+# nvidia-nvtx-cu11==11.7.91
 oauthlib==3.2.2
-octo-rpc==0.4.6
+# octo-rpc==0.4.6  # Package not found in PyPI
 onnxruntime==1.14.1
 orjson==3.9.1
 packaging==23.1
@@ -178,7 +179,7 @@ preshed==3.0.8
 prettytable==3.7.0
 prometheus-client==0.16.0
 prompt-toolkit==3.0.38
-promptsource==0.2.3
+# promptsource==0.2.3  # Package not found in PyPI
 protobuf==3.20.3
 psutil==5.9.5
 ptyprocess==0.7.0
@@ -205,7 +206,7 @@ pyppmd==1.0.0
 pyrsistent==0.19.3
 pyserini==0.21.0
 pytest==7.3.1
-python-cat==0.0.10
+# python-cat==0.0.10  # Package not found in PyPI
 python-dateutil==2.8.2
 python-json-logger==2.0.7
 python-multipart==0.0.6

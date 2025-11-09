@@ -756,19 +756,30 @@ if __name__ == "__main__":
                     else:
                         if "token_type_ids" in eval_batch:
                             token_type_ids = eval_batch.pop("token_type_ids")
-                        outputs = model.generate(
+
+                        # Build generation kwargs based on whether we're using beam search or sampling
+                        gen_kwargs = {
                             **eval_batch,
-                            num_beams=args.num_beams,
-                            top_k=args.top_k,
-                            top_p=args.top_p,
-                            early_stopping=True,
-                            # max_length=max_length_this_batch + args.max_length,
-                            max_length=args.max_length,
-                            length_penalty=2.0,
-                            repetition_penalty=1.0,
-                            num_return_sequences=1
-                            # stopping_criteria=StoppingCriteriaList([stop_criteria]
-                        )
+                            "max_length": args.max_length,
+                            "num_return_sequences": 1,
+                        }
+
+                        # Use beam search (deterministic) to avoid inf/nan issues with sampling
+                        if args.num_beams > 1:
+                            gen_kwargs.update({
+                                "num_beams": args.num_beams,
+                                "early_stopping": True,
+                                "length_penalty": 2.0,
+                                "repetition_penalty": 1.0,
+                                "do_sample": False,
+                            })
+                        else:
+                            # Greedy decoding (no sampling to avoid inf/nan)
+                            gen_kwargs.update({
+                                "do_sample": False,
+                            })
+
+                        outputs = model.generate(**gen_kwargs)
                 outputs[outputs[:, :] < 0] = tokenizer.pad_token_id
                 all_outputs.extend(outputs)
             eval_inputs_iter = [tokenizer.decode(e_id, skip_special_tokens=True, clean_up_tokenization_spaces=True) for e_id in eval_inputs_iter]
@@ -872,19 +883,29 @@ if __name__ == "__main__":
                 else:
                     if "token_type_ids" in eval_batch:
                         token_type_ids = eval_batch.pop("token_type_ids")
-                    outputs = model.generate(
+                    # Build generation kwargs based on whether we're using beam search or sampling
+                    gen_kwargs = {
                         **eval_batch,
-                        num_beams=args.num_beams,
-                        top_k=args.top_k,
-                        top_p=args.top_p,
-                        early_stopping=True,
-                        # max_length=max_length_this_batch + args.max_length,
-                        max_length=args.max_length,
-                        length_penalty=2.0,
-                        repetition_penalty=1.0,
-                        num_return_sequences=1
-                        # stopping_criteria=StoppingCriteriaList([stop_criteria])
-                    )
+                        "max_length": args.max_length,
+                        "num_return_sequences": 1,
+                    }
+
+                    # Use beam search (deterministic) to avoid inf/nan issues with sampling
+                    if args.num_beams > 1:
+                        gen_kwargs.update({
+                            "num_beams": args.num_beams,
+                            "early_stopping": True,
+                            "length_penalty": 2.0,
+                            "repetition_penalty": 1.0,
+                            "do_sample": False,
+                        })
+                    else:
+                        # Greedy decoding (no sampling to avoid inf/nan)
+                        gen_kwargs.update({
+                            "do_sample": False,
+                        })
+
+                    outputs = model.generate(**gen_kwargs)
             outputs[outputs[:, :] < 0] = tokenizer.pad_token_id
             all_outputs.extend(outputs)
         eval_inputs_iter = [tokenizer.decode(e_id, skip_special_tokens=True, clean_up_tokenization_spaces=True) for e_id in eval_inputs_iter]
