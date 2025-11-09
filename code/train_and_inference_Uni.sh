@@ -147,7 +147,7 @@ then
         MODEL_PATH='LLaMA MODELPATH'
     elif [ ${MODEL_NAME} = 'LLaMA2' ]
     then
-        MODEL_PATH='LLaMA2 MODELPATH'
+        MODEL_PATH='../../models/llama2-7b'
     elif [ ${MODEL_NAME} = 'Bloom-560m' ]    
     then
         MODEL_PATH='Bloom-560m MODELPATH'
