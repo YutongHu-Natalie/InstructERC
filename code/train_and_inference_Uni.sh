@@ -22,9 +22,9 @@ Experiments_setting='lora'
 
 # select the dataset
 # dataset='test'
-# dataset='iemocap'
+dataset='iemocap'
 # dataset='meld'
-dataset='EmoryNLP'
+# dataset='EmoryNLP'
 
 # select the historical window for dataset
 # LLaMA 's context = 1024 is enough for almost dataset, except for iemocap.
@@ -61,13 +61,13 @@ echo "domain_base: ${domain_base}"
 emotion_prediction='False'
 echo "emotion_prediction: ${emotion_prediction}"
 
-# data_percent=1.0    # 1
+data_percent=1.0    # 1
 # data_percent=0.5    # 1/2
 # data_percent=0.25   # 1/4
 # data_percent=0.125  # 1/8
 # data_percent=0.0625 # 1/16 
 # data_percent=0.03125 # 1/32 
-data_percent=0.015625 # 1/64 
+# data_percent=0.015625 # 1/64 
 echo "data_percent: ${data_percent}"
 
 
