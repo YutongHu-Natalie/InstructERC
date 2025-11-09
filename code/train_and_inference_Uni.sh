@@ -1,5 +1,4 @@
-source YOUR CONDA ENVS
-source YOUR DOCKER
+
 
 
 # The Shellparameter that controls the mainprocess
