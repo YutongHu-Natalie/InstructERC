@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=instructerc_llm
-#SBATCH --output=../logs/speechcue_%j.out
-#SBATCH --error=../logs/speechcue_%j.err
+#SBATCH --output=../logs/instructerc_%j.out
+#SBATCH --error=../logs/instructerc_%j.err
 #SBATCH --gres=gpu:1
 #SBATCH --time=12:00:00
 #SBATCH --mem=32G
