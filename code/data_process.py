@@ -237,9 +237,9 @@ def process_dataset(dataset, window=110, speaker_task='True', demons='False', pr
                     f_valid.write(json.dumps({'input':f'{content_task_dict[valid_id]}','target':f'{content_target_dict[valid_id]}'}, ensure_ascii=False)+ '\n')
     elif predictions == 'True':
         if speaker_task == 'None' and demons == 'False':
-            data_path = f'../data/{dataset}/predict/window'
+            data_path = f'../original_data/{dataset}/predict/window'
         elif speaker_task == 'None' and demons == 'True':
-            data_path = f'../data/{dataset}/predict/demon'
+            data_path = f'../original_data/{dataset}/predict/demon'
         os.makedirs(data_path, exist_ok=True)
             
         with open(f'{data_path}/train.json', 'w') as f_train:
