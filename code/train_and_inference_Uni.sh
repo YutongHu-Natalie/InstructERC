@@ -58,8 +58,8 @@ echo "domain_base: ${domain_base}"
 
 # parameter that determines whether the emotion_prediction task is added to train stage, 
 # meanwhile the KL divergence is added to the total loss
-# emotion_prediction='True'
-emotion_prediction='False'
+emotion_prediction='True'
+# emotion_prediction='False'
 echo "emotion_prediction: ${emotion_prediction}"
 
 data_percent=1.0    # 1
@@ -156,8 +156,6 @@ then
     elif [ ${MODEL_NAME} = 'LLaMA3-instruct-70b' ]
     then
         MODEL_PATH='/local/scratch/yhu383/models/llama3.3-70b'
-    then
-        MODEL_PATH='../../models/llama2-7b'
     elif [ ${MODEL_NAME} = 'Bloom-560m' ]    
     then
         MODEL_PATH='Bloom-560m MODELPATH'
