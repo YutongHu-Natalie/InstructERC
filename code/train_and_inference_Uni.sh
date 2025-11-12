@@ -15,8 +15,8 @@ MODEL_NAME='LLaMA2'
 # select the experiment's model
 # Experiments_setting='test'
 # Experiments_setting='zero_shot'
-# Experiments_setting='few_shot'
-Experiments_setting='lora'
+Experiments_setting='few_shot'
+# Experiments_setting='lora'
 # Experiments_setting='all_parameters'
 
 # select the dataset
