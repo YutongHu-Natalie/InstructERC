@@ -641,9 +641,18 @@ if args.do_train:
 
     optimizer_grouped_parameters = getOptimizerGroup(model=model)
 
-    optimizer_class = DeepSpeedCPUAdam if deepspeed_config["zero_optimization"]\
-        ["offload_optimizer"]["device"] == "cpu" else FusedAdam
-    optimizer = optimizer_class(optimizer_grouped_parameters, lr=args.learning_rate, betas=[0.9, 0.95])
+    # Try to use optimized optimizer, fallback to AdamW if compilation fails
+    if deepspeed_config["zero_optimization"]["offload_optimizer"]["device"] == "cpu":
+        optimizer_class = DeepSpeedCPUAdam
+        optimizer = optimizer_class(optimizer_grouped_parameters, lr=args.learning_rate, betas=[0.9, 0.95])
+    else:
+        try:
+            optimizer = FusedAdam(optimizer_grouped_parameters, lr=args.learning_rate, betas=[0.9, 0.95])
+            print("Using FusedAdam optimizer")
+        except Exception as e:
+            print(f"FusedAdam compilation failed: {e}")
+            print("Falling back to torch AdamW optimizer")
+            optimizer = AdamW(optimizer_grouped_parameters, lr=args.learning_rate, betas=[0.9, 0.95])
     lr_scheduler = get_linear_schedule_with_warmup(optimizer=optimizer, num_training_steps=t_total, num_warmup_steps=warmup_steps)
 
     model_engine, optimizer, train_dataloader, lr_scheduler = deepspeed.initialize(
