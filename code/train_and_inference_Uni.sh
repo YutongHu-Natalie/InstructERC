@@ -10,6 +10,8 @@ FLAG=1
 # MODEL_NAME='ChatGLM2'
 # MODEL_NAME='LLaMA'
 MODEL_NAME='LLaMA2'
+# MODEL_NAME='LLaMA3-instruct-70b'
+# MODEL_NAME='LLaMA3-instruct'
 # MODEL_NAME='Bloom-560m'
 
 # select the experiment's model
@@ -146,6 +148,14 @@ then
     then
         MODEL_PATH='LLaMA MODELPATH'
     elif [ ${MODEL_NAME} = 'LLaMA2' ]
+    then
+        MODEL_PATH='/local/scratch/yhu383/models/llama2-7b'
+    elif [ ${MODEL_NAME} = 'LLaMA3-instruct' ]
+    then
+        MODEL_PATH='/local/scratch/yhu383/models/llama3.1-8b'
+    elif [ ${MODEL_NAME} = 'LLaMA3-instruct-70b' ]
+    then
+        MODEL_PATH='/local/scratch/yhu383/models/llama3.3-70b'
     then
         MODEL_PATH='../../models/llama2-7b'
     elif [ ${MODEL_NAME} = 'Bloom-560m' ]    
