@@ -326,13 +326,15 @@ parser.add_argument(
 )
 parser.add_argument(
     "--do_train",
+    type=lambda x: x.lower() == 'true',
     default=False,
-    # action='store_true',
+    help='Whether to run training. Pass True or False.'
 )
 parser.add_argument(
     "--do_eval",
+    type=lambda x: x.lower() == 'true',
     default=False,
-    # action='store_true'
+    help='Whether to run evaluation. Pass True or False.'
 )
 parser.add_argument(
     "--few_shot",
