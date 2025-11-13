@@ -564,6 +564,7 @@ else:
         tokenizer = AutoTokenizer.from_pretrained(args.model_name_or_path, trust_remote_code=True)
         model = AutoModelForCausalLM.from_pretrained(args.model_name_or_path, trust_remote_code=True, output_hidden_states=True).half()
     else:
+        
         ## for llama, vicuna, belle
         config = LlamaConfig.from_pretrained(args.model_name_or_path)
         tokenizer = LlamaTokenizer.from_pretrained(args.model_name_or_path)
