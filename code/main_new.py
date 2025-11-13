@@ -572,13 +572,11 @@ else:
         ## for llama, vicuna, belle
         config = AutoConfig.from_pretrained(args.model_name_or_path, trust_remote_code=True)
         tokenizer = AutoTokenizer.from_pretrained(args.model_name_or_path, trust_remote_code=True)
-        model = AutoModelForCausalLM.from_pretrained(args.model_name_or_path, trust_remote_code=True, output_hidden_states=True).half()
-        # if args.dataset == 'EmoryNLP':
-        #     deepspeed_config["bfloat16"]["enabled"] = True
-        #     deepspeed_config["fp16"]["enabled"] = False
-        # else:
-        deepspeed_config["bfloat16"]["enabled"] = False
-        deepspeed_config["fp16"]["enabled"] = True
+        # Use bfloat16 for better numerical stability with Llama models
+        model = AutoModelForCausalLM.from_pretrained(args.model_name_or_path, trust_remote_code=True, output_hidden_states=True, torch_dtype=torch.bfloat16)
+        # Enable bfloat16 for Llama models to avoid FP16 loss scaling issues
+        deepspeed_config["bfloat16"]["enabled"] = True
+        deepspeed_config["fp16"]["enabled"] = False
 
 if tokenizer.pad_token is None:
     # Llama 3 tokenizers don't have unk_token, use eos_token instead
