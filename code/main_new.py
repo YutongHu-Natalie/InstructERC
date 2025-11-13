@@ -326,13 +326,13 @@ parser.add_argument(
 )
 parser.add_argument(
     "--do_train",
-    type=lambda x: x.lower() == 'true',
+    type=lambda x: str(x).lower() in ['true', '1', 'yes'],
     default=False,
     help='Whether to run training. Pass True or False.'
 )
 parser.add_argument(
     "--do_eval",
-    type=lambda x: x.lower() == 'true',
+    type=lambda x: str(x).lower() in ['true', '1', 'yes'],
     default=False,
     help='Whether to run evaluation. Pass True or False.'
 )
