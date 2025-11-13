@@ -387,25 +387,27 @@ args.temp is not None (temp is a parameter that controls the temperature of soft
 # This variable is likely being used later in the code to determine whether or not to use sampling when generating text.
 '''
 
-if args.do_train == 'True':
-    args.do_train = True
-else:
-    args.do_train = False
+# Convert string/boolean arguments to proper boolean values
+# Handle both 'True'/'False' strings and True/False booleans
+if isinstance(args.do_train, str):
+    args.do_train = args.do_train.lower() in ['true', '1', 'yes']
+elif not isinstance(args.do_train, bool):
+    args.do_train = bool(args.do_train)
 
-if args.do_eval == 'True': 
-    args.do_eval = True
-else:
-    args.do_eval = False
+if isinstance(args.do_eval, str):
+    args.do_eval = args.do_eval.lower() in ['true', '1', 'yes']
+elif not isinstance(args.do_eval, bool):
+    args.do_eval = bool(args.do_eval)
 
-if args.emotion_prediction == 'True':
-    args.emotion_prediction = True
-else:
-    args.emotion_prediction = False
+if isinstance(args.emotion_prediction, str):
+    args.emotion_prediction = args.emotion_prediction.lower() in ['true', '1', 'yes']
+elif not isinstance(args.emotion_prediction, bool):
+    args.emotion_prediction = bool(args.emotion_prediction)
 
-if args.lora == 'True':
-    args.lora = True
-else:
-    args.lora = False
+if isinstance(args.lora, str):
+    args.lora = args.lora.lower() in ['true', '1', 'yes']
+elif not isinstance(args.lora, bool):
+    args.lora = bool(args.lora)
 
 # eval_result_path = args.eval_result_path if args.eval_result_path is not None else args.output_dir
 # os.makedirs(eval_result_path, exist_ok=True)
