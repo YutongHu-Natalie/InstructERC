@@ -577,7 +577,14 @@ else:
         deepspeed_config["fp16"]["enabled"] = True
 
 if tokenizer.pad_token is None:
-    tokenizer.pad_token = tokenizer.unk_token
+    # Llama 3 tokenizers don't have unk_token, use eos_token instead
+    if tokenizer.unk_token is not None:
+        tokenizer.pad_token = tokenizer.unk_token
+    elif tokenizer.eos_token is not None:
+        tokenizer.pad_token = tokenizer.eos_token
+    else:
+        # Fallback: add a new pad token
+        tokenizer.add_special_tokens({'pad_token': '<pad>'})
 
 if tokenizer.eos_token is None:
     tokenizer.eos_token = tokenizer.pad_token
