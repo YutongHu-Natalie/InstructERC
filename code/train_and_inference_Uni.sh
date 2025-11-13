@@ -9,9 +9,9 @@ FLAG=1
 # MODEL_NAME='ChatGLM'
 # MODEL_NAME='ChatGLM2'
 # MODEL_NAME='LLaMA'
-MODEL_NAME='LLaMA2'
-# MODEL_NAME='LLaMA3-instruct-70b'
-# MODEL_NAME='LLaMA3-instruct'
+# MODEL_NAME='LLaMA2'
+# MODEL_NAME='LLaMA3-instruct-70b' #3.3-70b
+MODEL_NAME='LLaMA3-instruct' #3.1-8b
 # MODEL_NAME='Bloom-560m'
 
 # select the experiment's model
@@ -58,8 +58,8 @@ echo "domain_base: ${domain_base}"
 
 # parameter that determines whether the emotion_prediction task is added to train stage, 
 # meanwhile the KL divergence is added to the total loss
-emotion_prediction='True'
-# emotion_prediction='False'
+# emotion_prediction='True'
+emotion_prediction='False'
 echo "emotion_prediction: ${emotion_prediction}"
 
 data_percent=1.0    # 1
@@ -74,7 +74,7 @@ echo "data_percent: ${data_percent}"
 
 # Notes: bloom-560 is convenient for debugging
 case ${MODEL_NAME} in
-'ChatGLM'|'ChatGLM2'|'LLaMA'|'LLaMA2'|'Bloom-560m')
+'ChatGLM'|'ChatGLM2'|'LLaMA'|'LLaMA2'|'LLaMA3-instruct-70b'|'LLaMA3-instruct'|'Bloom-560m')
     case ${Experiments_setting} in
     'zero_shot'|'few_shot'|'lora'|'all_parameters')
         case ${dataset} in
