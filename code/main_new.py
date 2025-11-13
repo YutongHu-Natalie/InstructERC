@@ -893,8 +893,7 @@ if __name__ == "__main__":
                     outputs = model.generate(
                         **eval_batch,
                         num_beams=args.num_beams,
-                        # max_length=max_length_this_batch + args.max_length,
-                        max_length=args.max_length,
+                        max_new_tokens=args.max_seq_length,  # Generate up to max_seq_length NEW tokens
                         do_sample=args.do_sample,
                         top_p=args.top_p,
                         top_k=args.top_k,
@@ -905,7 +904,7 @@ if __name__ == "__main__":
                     # Build generation kwargs based on whether we're using beam search or sampling
                     gen_kwargs = {
                         **eval_batch,
-                        "max_length": args.max_length,
+                        "max_new_tokens": args.max_seq_length,  # Generate up to max_seq_length NEW tokens
                         "num_return_sequences": 1,
                     }
 
