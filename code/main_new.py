@@ -731,7 +731,8 @@ if __name__ == "__main__":
                     loss = outputs.loss
 
                 model.backward(loss)
-                torch.nn.utils.clip_grad_norm_(model.parameters(), args.clip_norm)
+                # DeepSpeed handles gradient clipping internally via gradient_clipping config
+                # Manual clipping interferes with gradient accumulation
                 model.step()
                     
                 current_loss = loss.item()
