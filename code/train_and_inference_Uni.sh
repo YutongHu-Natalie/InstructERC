@@ -10,15 +10,15 @@ FLAG=1
 # MODEL_NAME='ChatGLM2'
 # MODEL_NAME='LLaMA'
 # MODEL_NAME='LLaMA2'
-# MODEL_NAME='LLaMA3-instruct-70b' #3.3-70b
-MODEL_NAME='LLaMA3-instruct' #3.1-8b
+MODEL_NAME='LLaMA3-instruct-70b' #3.3-70b
+# MODEL_NAME='LLaMA3-instruct' #3.1-8b
 # MODEL_NAME='Bloom-560m'
 
 # select the experiment's model
 # Experiments_setting='test'
 # Experiments_setting='zero_shot'
-# Experiments_setting='few_shot'
-Experiments_setting='lora'
+Experiments_setting='few_shot'
+# Experiments_setting='lora'
 # Experiments_setting='all_parameters'
 
 # select the dataset

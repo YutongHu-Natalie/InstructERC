@@ -2,9 +2,10 @@
 #SBATCH --job-name=instructerc_llm
 #SBATCH --output=../logs/instructerc_%j.out
 #SBATCH --error=../logs/instructerc_%j.err
-#SBATCH --gres=gpu:1
-#SBATCH --time=12:00:00
-#SBATCH --mem=50G
+#SBATCH --qos=gpu02
+#SBATCH --gres=gpu:2
+#SBATCH --time=8:00:00
+#SBATCH --mem=400G
 echo "Job started at $(date)"
 echo "Running on host: $(hostname)"
 echo "Job ID: $SLURM_JOB_ID"

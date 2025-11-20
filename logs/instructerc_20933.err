@@ -1,0 +1,537 @@
+/local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/deepspeed/runtime/zero/linear.py:49: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, weight, bias=None):
+/local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/deepspeed/runtime/zero/linear.py:67: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: 'Could not load this library: /local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/torchvision/image.so'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+/local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/deepspeed/runtime/zero/linear.py:49: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, weight, bias=None):
+/local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/deepspeed/runtime/zero/linear.py:67: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: 'Could not load this library: /local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/torchvision/image.so'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+/local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: 'Could not load this library: /local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/torchvision/image.so'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+/local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: 'Could not load this library: /local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/torchvision/image.so'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+/local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/deepspeed/runtime/zero/linear.py:49: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, weight, bias=None):
+/local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/deepspeed/runtime/zero/linear.py:49: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, weight, bias=None):
+/local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/deepspeed/runtime/zero/linear.py:67: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/deepspeed/runtime/zero/linear.py:67: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/accelerate/utils/torch_xla.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/accelerate/utils/torch_xla.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+`torch_dtype` is deprecated! Use `dtype` instead!
+`torch_dtype` is deprecated! Use `dtype` instead!
+The following generation flags are not valid and may be ignored: ['output_hidden_states']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['output_hidden_states']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Loading checkpoint shards:   0%|          | 0/30 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/30 [00:00<?, ?it/s]Loading checkpoint shards:  70%|███████   | 21/30 [00:00<00:00, 205.85it/s]Loading checkpoint shards:  70%|███████   | 21/30 [00:00<00:00, 205.82it/s]Loading checkpoint shards: 100%|██████████| 30/30 [00:00<00:00, 220.84it/s]Loading checkpoint shards: 100%|██████████| 30/30 [00:00<00:00, 220.85it/s]
+
+/local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/torchvision/datapoints/__init__.py:12: UserWarning: The torchvision.datapoints and torchvision.transforms.v2 namespaces are still Beta. While we do not expect major breaking changes, some APIs may still change according to user feedback. Please submit any feedback you may have in this issue: https://github.com/pytorch/vision/issues/6753, and you can also check out https://github.com/pytorch/vision/issues/7319 to learn more about the APIs that we suspect might involve future changes. You can silence this warning by calling torchvision.disable_beta_transforms_warning().
+  warnings.warn(_BETA_TRANSFORMS_WARNING)
+/local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/torchvision/transforms/v2/__init__.py:54: UserWarning: The torchvision.datapoints and torchvision.transforms.v2 namespaces are still Beta. While we do not expect major breaking changes, some APIs may still change according to user feedback. Please submit any feedback you may have in this issue: https://github.com/pytorch/vision/issues/6753, and you can also check out https://github.com/pytorch/vision/issues/7319 to learn more about the APIs that we suspect might involve future changes. You can silence this warning by calling torchvision.disable_beta_transforms_warning().
+  warnings.warn(_BETA_TRANSFORMS_WARNING)
+/local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/torchvision/datapoints/__init__.py:12: UserWarning: The torchvision.datapoints and torchvision.transforms.v2 namespaces are still Beta. While we do not expect major breaking changes, some APIs may still change according to user feedback. Please submit any feedback you may have in this issue: https://github.com/pytorch/vision/issues/6753, and you can also check out https://github.com/pytorch/vision/issues/7319 to learn more about the APIs that we suspect might involve future changes. You can silence this warning by calling torchvision.disable_beta_transforms_warning().
+  warnings.warn(_BETA_TRANSFORMS_WARNING)
+/local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/torchvision/transforms/v2/__init__.py:54: UserWarning: The torchvision.datapoints and torchvision.transforms.v2 namespaces are still Beta. While we do not expect major breaking changes, some APIs may still change according to user feedback. Please submit any feedback you may have in this issue: https://github.com/pytorch/vision/issues/6753, and you can also check out https://github.com/pytorch/vision/issues/7319 to learn more about the APIs that we suspect might involve future changes. You can silence this warning by calling torchvision.disable_beta_transforms_warning().
+  warnings.warn(_BETA_TRANSFORMS_WARNING)
+/local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py:627: UserWarning: This DataLoader will create 8 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(
+/local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/torch/utils/data/dataloader.py:627: UserWarning: This DataLoader will create 8 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(
+  0%|          | 0/203 [00:00<?, ?it/s]  0%|          | 0/203 [00:00<?, ?it/s]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  0%|          | 1/203 [00:22<1:15:49, 22.52s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  0%|          | 1/203 [00:22<1:16:01, 22.58s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  1%|          | 2/203 [00:45<1:16:15, 22.76s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  1%|          | 2/203 [00:45<1:16:22, 22.80s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  1%|▏         | 3/203 [01:03<1:09:07, 20.74s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  1%|▏         | 3/203 [01:04<1:09:38, 20.89s/it]Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  1%|▏         | 3/203 [01:05<1:12:25, 21.73s/it]
+  1%|▏         | 3/203 [01:05<1:13:03, 21.92s/it]
+[rank0]: ╭───────────────────── Traceback (most recent call last) ──────────────────────╮
+[rank0]: │ /local/scratch/yhu383/InstructERC/code/main_new.py:927 in <module>           │
+[rank0]: │                                                                              │
+[rank0]: │   924 │   │   │   │   │   │   │   "do_sample": False,                        │
+[rank0]: │   925 │   │   │   │   │   │   })                                             │
+[rank0]: │   926 │   │   │   │   │                                                      │
+[rank0]: │ ❱ 927 │   │   │   │   │   outputs = model.generate(**gen_kwargs)             │
+[rank0]: │   928 │   │   │   outputs[outputs[:, :] < 0] = tokenizer.pad_token_id        │
+[rank0]: │   929 │   │   │   all_outputs.extend(outputs)                                │
+[rank0]: │   930 │   │   eval_inputs_iter = [tokenizer.decode(e_id, skip_special_tokens │
+[rank0]: │                                                                              │
+[rank0]: │ /local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/torch/ut │
+[rank0]: │ ils/_contextlib.py:120 in decorate_context                                   │
+[rank0]: │                                                                              │
+[rank0]: │   117 │   @functools.wraps(func)                                             │
+[rank0]: │   118 │   def decorate_context(*args, **kwargs):                             │
+[rank0]: │   119 │   │   with ctx_factory():                                            │
+[rank0]: │ ❱ 120 │   │   │   return func(*args, **kwargs)                               │
+[rank0]: │   121 │                                                                      │
+[rank0]: │   122 │   return decorate_context                                            │
+[rank0]: │   123                                                                        │
+[rank0]: │                                                                              │
+[rank0]: │ /local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/transfor │
+[rank0]: │ mers/generation/utils.py:2564 in generate                                    │
+[rank0]: │                                                                              │
+[rank0]: │   2561 │   │   model_kwargs["use_cache"] = generation_config.use_cache       │
+[rank0]: │   2562 │   │                                                                 │
+[rank0]: │   2563 │   │   # 9. Call generation mode                                     │
+[rank0]: │ ❱ 2564 │   │   result = decoding_method(                                     │
+[rank0]: │   2565 │   │   │   self,                                                     │
+[rank0]: │   2566 │   │   │   input_ids,                                                │
+[rank0]: │   2567 │   │   │   logits_processor=prepared_logits_processor,               │
+[rank0]: │                                                                              │
+[rank0]: │ /local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/transfor │
+[rank0]: │ mers/generation/utils.py:2784 in _sample                                     │
+[rank0]: │                                                                              │
+[rank0]: │   2781 │   │   │   model_inputs = self.prepare_inputs_for_generation(input_i │
+[rank0]: │   2782 │   │   │                                                             │
+[rank0]: │   2783 │   │   │   if is_prefill:                                            │
+[rank0]: │ ❱ 2784 │   │   │   │   outputs = self(**model_inputs, return_dict=True)      │
+[rank0]: │   2785 │   │   │   │   is_prefill = False                                    │
+[rank0]: │   2786 │   │   │   else:                                                     │
+[rank0]: │   2787 │   │   │   │   outputs = model_forward(**model_inputs, return_dict=T │
+[rank0]: │                                                                              │
+[rank0]: │ /local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/torch/nn │
+[rank0]: │ /modules/module.py:1775 in _wrapped_call_impl                                │
+[rank0]: │                                                                              │
+[rank0]: │   1772 │   │   if self._compiled_call_impl is not None:                      │
+[rank0]: │   1773 │   │   │   return self._compiled_call_impl(*args, **kwargs)  # type: │
+[rank0]: │   1774 │   │   else:                                                         │
+[rank0]: │ ❱ 1775 │   │   │   return self._call_impl(*args, **kwargs)                   │
+[rank0]: │   1776 │                                                                     │
+[rank0]: │   1777 │   # torchrec tests the code consistency with the following code     │
+[rank0]: │   1778 │   # fmt: off                                                        │
+[rank0]: │                                                                              │
+[rank0]: │ /local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/torch/nn │
+[rank0]: │ /modules/module.py:1786 in _call_impl                                        │
+[rank0]: │                                                                              │
+[rank0]: │   1783 │   │   if not (self._backward_hooks or self._backward_pre_hooks or s │
+[rank0]: │   1784 │   │   │   │   or _global_backward_pre_hooks or _global_backward_hoo │
+[rank0]: │   1785 │   │   │   │   or _global_forward_hooks or _global_forward_pre_hooks │
+[rank0]: │ ❱ 1786 │   │   │   return forward_call(*args, **kwargs)                      │
+[rank0]: │   1787 │   │                                                                 │
+[rank0]: │   1788 │   │   result = None                                                 │
+[rank0]: │   1789 │   │   called_always_called_hooks = set()                            │
+[rank0]: │                                                                              │
+[rank0]: │ /local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/transfor │
+[rank0]: │ mers/utils/generic.py:918 in wrapper                                         │
+[rank0]: │                                                                              │
+[rank0]: │    915 │   │   return_dict_passed = kwargs.pop("return_dict", return_dict)   │
+[rank0]: │    916 │   │   if return_dict_passed is not None:                            │
+[rank0]: │    917 │   │   │   return_dict = return_dict_passed                          │
+[rank0]: │ ❱  918 │   │   output = func(self, *args, **kwargs)                          │
+[rank0]: │    919 │   │   if not return_dict and not isinstance(output, tuple):         │
+[rank0]: │    920 │   │   │   output = output.to_tuple()                                │
+[rank0]: │    921 │   │   return output                                                 │
+[rank0]: │                                                                              │
+[rank0]: │ /local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/transfor │
+[rank0]: │ mers/models/llama/modeling_llama.py:459 in forward                           │
+[rank0]: │                                                                              │
+[rank0]: │   456 │   │   >>> tokenizer.batch_decode(generate_ids, skip_special_tokens=T │
+[rank0]: │   457 │   │   "Hey, are you conscious? Can you talk to me?\nI'm not consciou │
+[rank0]: │   458 │   │   ```"""                                                         │
+[rank0]: │ ❱ 459 │   │   outputs: BaseModelOutputWithPast = self.model(                 │
+[rank0]: │   460 │   │   │   input_ids=input_ids,                                       │
+[rank0]: │   461 │   │   │   attention_mask=attention_mask,                             │
+[rank0]: │   462 │   │   │   position_ids=position_ids,                                 │
+[rank0]: │                                                                              │
+[rank0]: │ /local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/torch/nn │
+[rank0]: │ /modules/module.py:1775 in _wrapped_call_impl                                │
+[rank0]: │                                                                              │
+[rank0]: │   1772 │   │   if self._compiled_call_impl is not None:                      │
+[rank0]: │   1773 │   │   │   return self._compiled_call_impl(*args, **kwargs)  # type: │
+[rank0]: │   1774 │   │   else:                                                         │
+[rank0]: │ ❱ 1775 │   │   │   return self._call_impl(*args, **kwargs)                   │
+[rank0]: │   1776 │                                                                     │
+[rank0]: │   1777 │   # torchrec tests the code consistency with the following code     │
+[rank0]: │   1778 │   # fmt: off                                                        │
+[rank0]: │                                                                              │
+[rank0]: │ /local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/torch/nn │
+[rank0]: │ /modules/module.py:1786 in _call_impl                                        │
+[rank0]: │                                                                              │
+[rank0]: │   1783 │   │   if not (self._backward_hooks or self._backward_pre_hooks or s │
+[rank0]: │   1784 │   │   │   │   or _global_backward_pre_hooks or _global_backward_hoo │
+[rank0]: │   1785 │   │   │   │   or _global_forward_hooks or _global_forward_pre_hooks │
+[rank0]: │ ❱ 1786 │   │   │   return forward_call(*args, **kwargs)                      │
+[rank0]: │   1787 │   │                                                                 │
+[rank0]: │   1788 │   │   result = None                                                 │
+[rank0]: │   1789 │   │   called_always_called_hooks = set()                            │
+[rank0]: │                                                                              │
+[rank0]: │ /local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/transfor │
+[rank0]: │ mers/utils/generic.py:1064 in wrapper                                        │
+[rank0]: │                                                                              │
+[rank0]: │   1061 │   │   │   │   │   │   monkey_patched_layers.append((module, origina │
+[rank0]: │   1062 │   │                                                                 │
+[rank0]: │   1063 │   │   try:                                                          │
+[rank0]: │ ❱ 1064 │   │   │   outputs = func(self, *args, **kwargs)                     │
+[rank0]: │   1065 │   │   except TypeError as original_exception:                       │
+[rank0]: │   1066 │   │   │   # If we get a TypeError, it's possible that the model is  │
+[rank0]: │   1067 │   │   │   # Get a TypeError even after removing the recordable kwar │
+[rank0]: │                                                                              │
+[rank0]: │ /local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/transfor │
+[rank0]: │ mers/models/llama/modeling_llama.py:395 in forward                           │
+[rank0]: │                                                                              │
+[rank0]: │   392 │   │   position_embeddings = self.rotary_emb(hidden_states, position_ │
+[rank0]: │   393 │   │                                                                  │
+[rank0]: │   394 │   │   for decoder_layer in self.layers[: self.config.num_hidden_laye │
+[rank0]: │ ❱ 395 │   │   │   hidden_states = decoder_layer(                             │
+[rank0]: │   396 │   │   │   │   hidden_states,                                         │
+[rank0]: │   397 │   │   │   │   attention_mask=causal_mask,                            │
+[rank0]: │   398 │   │   │   │   position_ids=position_ids,                             │
+[rank0]: │                                                                              │
+[rank0]: │ /local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/transfor │
+[rank0]: │ mers/modeling_layers.py:94 in __call__                                       │
+[rank0]: │                                                                              │
+[rank0]: │    91 │   │   │   │   logger.warning_once(message)                           │
+[rank0]: │    92 │   │   │                                                              │
+[rank0]: │    93 │   │   │   return self._gradient_checkpointing_func(partial(super()._ │
+[rank0]: │ ❱  94 │   │   return super().__call__(*args, **kwargs)                       │
+[rank0]: │    95                                                                        │
+[rank0]: │    96                                                                        │
+[rank0]: │    97 @auto_docstring                                                        │
+[rank0]: │                                                                              │
+[rank0]: │ /local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/torch/nn │
+[rank0]: │ /modules/module.py:1775 in _wrapped_call_impl                                │
+[rank0]: │                                                                              │
+[rank0]: │   1772 │   │   if self._compiled_call_impl is not None:                      │
+[rank0]: │   1773 │   │   │   return self._compiled_call_impl(*args, **kwargs)  # type: │
+[rank0]: │   1774 │   │   else:                                                         │
+[rank0]: │ ❱ 1775 │   │   │   return self._call_impl(*args, **kwargs)                   │
+[rank0]: │   1776 │                                                                     │
+[rank0]: │   1777 │   # torchrec tests the code consistency with the following code     │
+[rank0]: │   1778 │   # fmt: off                                                        │
+[rank0]: │                                                                              │
+[rank0]: │ /local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/torch/nn │
+[rank0]: │ /modules/module.py:1786 in _call_impl                                        │
+[rank0]: │                                                                              │
+[rank0]: │   1783 │   │   if not (self._backward_hooks or self._backward_pre_hooks or s │
+[rank0]: │   1784 │   │   │   │   or _global_backward_pre_hooks or _global_backward_hoo │
+[rank0]: │   1785 │   │   │   │   or _global_forward_hooks or _global_forward_pre_hooks │
+[rank0]: │ ❱ 1786 │   │   │   return forward_call(*args, **kwargs)                      │
+[rank0]: │   1787 │   │                                                                 │
+[rank0]: │   1788 │   │   result = None                                                 │
+[rank0]: │   1789 │   │   called_always_called_hooks = set()                            │
+[rank0]: │                                                                              │
+[rank0]: │ /local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/transfor │
+[rank0]: │ mers/utils/generic.py:1023 in wrapped_forward                                │
+[rank0]: │                                                                              │
+[rank0]: │   1020 │   │   │   │   │   ):                                                │
+[rank0]: │   1021 │   │   │   │   │   │   output = orig_forward(*args, **kwargs)        │
+[rank0]: │   1022 │   │   │   │   else:                                                 │
+[rank0]: │ ❱ 1023 │   │   │   │   │   output = orig_forward(*args, **kwargs)            │
+[rank0]: │   1024 │   │   │   │   if not isinstance(output, tuple):                     │
+[rank0]: │   1025 │   │   │   │   │   collected_outputs[key] += (output,)               │
+[rank0]: │   1026 │   │   │   │   elif output[index] is not None:                       │
+[rank0]: │                                                                              │
+[rank0]: │ /local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/transfor │
+[rank0]: │ mers/utils/deprecation.py:172 in wrapped_func                                │
+[rank0]: │                                                                              │
+[rank0]: │   169 │   │   │   │   # DeprecationWarning is ignored by default, so we use  │
+[rank0]: │   170 │   │   │   │   warnings.warn(message, FutureWarning, stacklevel=2)    │
+[rank0]: │   171 │   │   │                                                              │
+[rank0]: │ ❱ 172 │   │   │   return func(*args, **kwargs)                               │
+[rank0]: │   173 │   │                                                                  │
+[rank0]: │   174 │   │   return wrapped_func                                            │
+[rank0]: │   175                                                                        │
+[rank0]: │                                                                              │
+[rank0]: │ /local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/transfor │
+[rank0]: │ mers/models/llama/modeling_llama.py:309 in forward                           │
+[rank0]: │                                                                              │
+[rank0]: │   306 │   │   # Fully Connected                                              │
+[rank0]: │   307 │   │   residual = hidden_states                                       │
+[rank0]: │   308 │   │   hidden_states = self.post_attention_layernorm(hidden_states)   │
+[rank0]: │ ❱ 309 │   │   hidden_states = self.mlp(hidden_states)                        │
+[rank0]: │   310 │   │   hidden_states = residual + hidden_states                       │
+[rank0]: │   311 │   │   return hidden_states                                           │
+[rank0]: │   312                                                                        │
+[rank0]: │                                                                              │
+[rank0]: │ /local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/torch/nn │
+[rank0]: │ /modules/module.py:1775 in _wrapped_call_impl                                │
+[rank0]: │                                                                              │
+[rank0]: │   1772 │   │   if self._compiled_call_impl is not None:                      │
+[rank0]: │   1773 │   │   │   return self._compiled_call_impl(*args, **kwargs)  # type: │
+[rank0]: │   1774 │   │   else:                                                         │
+[rank0]: │ ❱ 1775 │   │   │   return self._call_impl(*args, **kwargs)                   │
+[rank0]: │   1776 │                                                                     │
+[rank0]: │   1777 │   # torchrec tests the code consistency with the following code     │
+[rank0]: │   1778 │   # fmt: off                                                        │
+[rank0]: │                                                                              │
+[rank0]: │ /local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/torch/nn │
+[rank0]: │ /modules/module.py:1786 in _call_impl                                        │
+[rank0]: │                                                                              │
+[rank0]: │   1783 │   │   if not (self._backward_hooks or self._backward_pre_hooks or s │
+[rank0]: │   1784 │   │   │   │   or _global_backward_pre_hooks or _global_backward_hoo │
+[rank0]: │   1785 │   │   │   │   or _global_forward_hooks or _global_forward_pre_hooks │
+[rank0]: │ ❱ 1786 │   │   │   return forward_call(*args, **kwargs)                      │
+[rank0]: │   1787 │   │                                                                 │
+[rank0]: │   1788 │   │   result = None                                                 │
+[rank0]: │   1789 │   │   called_always_called_hooks = set()                            │
+[rank0]: │                                                                              │
+[rank0]: │ /local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/transfor │
+[rank0]: │ mers/models/llama/modeling_llama.py:155 in forward                           │
+[rank0]: │                                                                              │
+[rank0]: │   152 │   │   self.act_fn = ACT2FN[config.hidden_act]                        │
+[rank0]: │   153 │                                                                      │
+[rank0]: │   154 │   def forward(self, x):                                              │
+[rank0]: │ ❱ 155 │   │   down_proj = self.down_proj(self.act_fn(self.gate_proj(x)) * se │
+[rank0]: │   156 │   │   return down_proj                                               │
+[rank0]: │   157                                                                        │
+[rank0]: │   158                                                                        │
+[rank0]: ╰──────────────────────────────────────────────────────────────────────────────╯
+[rank0]: OutOfMemoryError: CUDA out of memory. Tried to allocate 218.00 MiB. GPU 0 has a 
+[rank0]: total capacity of 139.72 GiB of which 206.69 MiB is free. Including non-PyTorch 
+[rank0]: memory, this process has 139.51 GiB memory in use. Of the allocated memory 
+[rank0]: 137.63 GiB is allocated by PyTorch, and 411.70 MiB is reserved by PyTorch but 
+[rank0]: unallocated. If reserved but unallocated memory is large try setting 
+[rank0]: PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See 
+[rank0]: documentation for Memory Management  
+[rank0]: (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[rank1]: ╭───────────────────── Traceback (most recent call last) ──────────────────────╮
+[rank1]: │ /local/scratch/yhu383/InstructERC/code/main_new.py:927 in <module>           │
+[rank1]: │                                                                              │
+[rank1]: │   924 │   │   │   │   │   │   │   "do_sample": False,                        │
+[rank1]: │   925 │   │   │   │   │   │   })                                             │
+[rank1]: │   926 │   │   │   │   │                                                      │
+[rank1]: │ ❱ 927 │   │   │   │   │   outputs = model.generate(**gen_kwargs)             │
+[rank1]: │   928 │   │   │   outputs[outputs[:, :] < 0] = tokenizer.pad_token_id        │
+[rank1]: │   929 │   │   │   all_outputs.extend(outputs)                                │
+[rank1]: │   930 │   │   eval_inputs_iter = [tokenizer.decode(e_id, skip_special_tokens │
+[rank1]: │                                                                              │
+[rank1]: │ /local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/torch/ut │
+[rank1]: │ ils/_contextlib.py:120 in decorate_context                                   │
+[rank1]: │                                                                              │
+[rank1]: │   117 │   @functools.wraps(func)                                             │
+[rank1]: │   118 │   def decorate_context(*args, **kwargs):                             │
+[rank1]: │   119 │   │   with ctx_factory():                                            │
+[rank1]: │ ❱ 120 │   │   │   return func(*args, **kwargs)                               │
+[rank1]: │   121 │                                                                      │
+[rank1]: │   122 │   return decorate_context                                            │
+[rank1]: │   123                                                                        │
+[rank1]: │                                                                              │
+[rank1]: │ /local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/transfor │
+[rank1]: │ mers/generation/utils.py:2564 in generate                                    │
+[rank1]: │                                                                              │
+[rank1]: │   2561 │   │   model_kwargs["use_cache"] = generation_config.use_cache       │
+[rank1]: │   2562 │   │                                                                 │
+[rank1]: │   2563 │   │   # 9. Call generation mode                                     │
+[rank1]: │ ❱ 2564 │   │   result = decoding_method(                                     │
+[rank1]: │   2565 │   │   │   self,                                                     │
+[rank1]: │   2566 │   │   │   input_ids,                                                │
+[rank1]: │   2567 │   │   │   logits_processor=prepared_logits_processor,               │
+[rank1]: │                                                                              │
+[rank1]: │ /local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/transfor │
+[rank1]: │ mers/generation/utils.py:2784 in _sample                                     │
+[rank1]: │                                                                              │
+[rank1]: │   2781 │   │   │   model_inputs = self.prepare_inputs_for_generation(input_i │
+[rank1]: │   2782 │   │   │                                                             │
+[rank1]: │   2783 │   │   │   if is_prefill:                                            │
+[rank1]: │ ❱ 2784 │   │   │   │   outputs = self(**model_inputs, return_dict=True)      │
+[rank1]: │   2785 │   │   │   │   is_prefill = False                                    │
+[rank1]: │   2786 │   │   │   else:                                                     │
+[rank1]: │   2787 │   │   │   │   outputs = model_forward(**model_inputs, return_dict=T │
+[rank1]: │                                                                              │
+[rank1]: │ /local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/torch/nn │
+[rank1]: │ /modules/module.py:1775 in _wrapped_call_impl                                │
+[rank1]: │                                                                              │
+[rank1]: │   1772 │   │   if self._compiled_call_impl is not None:                      │
+[rank1]: │   1773 │   │   │   return self._compiled_call_impl(*args, **kwargs)  # type: │
+[rank1]: │   1774 │   │   else:                                                         │
+[rank1]: │ ❱ 1775 │   │   │   return self._call_impl(*args, **kwargs)                   │
+[rank1]: │   1776 │                                                                     │
+[rank1]: │   1777 │   # torchrec tests the code consistency with the following code     │
+[rank1]: │   1778 │   # fmt: off                                                        │
+[rank1]: │                                                                              │
+[rank1]: │ /local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/torch/nn │
+[rank1]: │ /modules/module.py:1786 in _call_impl                                        │
+[rank1]: │                                                                              │
+[rank1]: │   1783 │   │   if not (self._backward_hooks or self._backward_pre_hooks or s │
+[rank1]: │   1784 │   │   │   │   or _global_backward_pre_hooks or _global_backward_hoo │
+[rank1]: │   1785 │   │   │   │   or _global_forward_hooks or _global_forward_pre_hooks │
+[rank1]: │ ❱ 1786 │   │   │   return forward_call(*args, **kwargs)                      │
+[rank1]: │   1787 │   │                                                                 │
+[rank1]: │   1788 │   │   result = None                                                 │
+[rank1]: │   1789 │   │   called_always_called_hooks = set()                            │
+[rank1]: │                                                                              │
+[rank1]: │ /local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/transfor │
+[rank1]: │ mers/utils/generic.py:918 in wrapper                                         │
+[rank1]: │                                                                              │
+[rank1]: │    915 │   │   return_dict_passed = kwargs.pop("return_dict", return_dict)   │
+[rank1]: │    916 │   │   if return_dict_passed is not None:                            │
+[rank1]: │    917 │   │   │   return_dict = return_dict_passed                          │
+[rank1]: │ ❱  918 │   │   output = func(self, *args, **kwargs)                          │
+[rank1]: │    919 │   │   if not return_dict and not isinstance(output, tuple):         │
+[rank1]: │    920 │   │   │   output = output.to_tuple()                                │
+[rank1]: │    921 │   │   return output                                                 │
+[rank1]: │                                                                              │
+[rank1]: │ /local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/transfor │
+[rank1]: │ mers/models/llama/modeling_llama.py:459 in forward                           │
+[rank1]: │                                                                              │
+[rank1]: │   456 │   │   >>> tokenizer.batch_decode(generate_ids, skip_special_tokens=T │
+[rank1]: │   457 │   │   "Hey, are you conscious? Can you talk to me?\nI'm not consciou │
+[rank1]: │   458 │   │   ```"""                                                         │
+[rank1]: │ ❱ 459 │   │   outputs: BaseModelOutputWithPast = self.model(                 │
+[rank1]: │   460 │   │   │   input_ids=input_ids,                                       │
+[rank1]: │   461 │   │   │   attention_mask=attention_mask,                             │
+[rank1]: │   462 │   │   │   position_ids=position_ids,                                 │
+[rank1]: │                                                                              │
+[rank1]: │ /local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/torch/nn │
+[rank1]: │ /modules/module.py:1775 in _wrapped_call_impl                                │
+[rank1]: │                                                                              │
+[rank1]: │   1772 │   │   if self._compiled_call_impl is not None:                      │
+[rank1]: │   1773 │   │   │   return self._compiled_call_impl(*args, **kwargs)  # type: │
+[rank1]: │   1774 │   │   else:                                                         │
+[rank1]: │ ❱ 1775 │   │   │   return self._call_impl(*args, **kwargs)                   │
+[rank1]: │   1776 │                                                                     │
+[rank1]: │   1777 │   # torchrec tests the code consistency with the following code     │
+[rank1]: │   1778 │   # fmt: off                                                        │
+[rank1]: │                                                                              │
+[rank1]: │ /local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/torch/nn │
+[rank1]: │ /modules/module.py:1786 in _call_impl                                        │
+[rank1]: │                                                                              │
+[rank1]: │   1783 │   │   if not (self._backward_hooks or self._backward_pre_hooks or s │
+[rank1]: │   1784 │   │   │   │   or _global_backward_pre_hooks or _global_backward_hoo │
+[rank1]: │   1785 │   │   │   │   or _global_forward_hooks or _global_forward_pre_hooks │
+[rank1]: │ ❱ 1786 │   │   │   return forward_call(*args, **kwargs)                      │
+[rank1]: │   1787 │   │                                                                 │
+[rank1]: │   1788 │   │   result = None                                                 │
+[rank1]: │   1789 │   │   called_always_called_hooks = set()                            │
+[rank1]: │                                                                              │
+[rank1]: │ /local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/transfor │
+[rank1]: │ mers/utils/generic.py:1064 in wrapper                                        │
+[rank1]: │                                                                              │
+[rank1]: │   1061 │   │   │   │   │   │   monkey_patched_layers.append((module, origina │
+[rank1]: │   1062 │   │                                                                 │
+[rank1]: │   1063 │   │   try:                                                          │
+[rank1]: │ ❱ 1064 │   │   │   outputs = func(self, *args, **kwargs)                     │
+[rank1]: │   1065 │   │   except TypeError as original_exception:                       │
+[rank1]: │   1066 │   │   │   # If we get a TypeError, it's possible that the model is  │
+[rank1]: │   1067 │   │   │   # Get a TypeError even after removing the recordable kwar │
+[rank1]: │                                                                              │
+[rank1]: │ /local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/transfor │
+[rank1]: │ mers/models/llama/modeling_llama.py:395 in forward                           │
+[rank1]: │                                                                              │
+[rank1]: │   392 │   │   position_embeddings = self.rotary_emb(hidden_states, position_ │
+[rank1]: │   393 │   │                                                                  │
+[rank1]: │   394 │   │   for decoder_layer in self.layers[: self.config.num_hidden_laye │
+[rank1]: │ ❱ 395 │   │   │   hidden_states = decoder_layer(                             │
+[rank1]: │   396 │   │   │   │   hidden_states,                                         │
+[rank1]: │   397 │   │   │   │   attention_mask=causal_mask,                            │
+[rank1]: │   398 │   │   │   │   position_ids=position_ids,                             │
+[rank1]: │                                                                              │
+[rank1]: │ /local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/transfor │
+[rank1]: │ mers/modeling_layers.py:94 in __call__                                       │
+[rank1]: │                                                                              │
+[rank1]: │    91 │   │   │   │   logger.warning_once(message)                           │
+[rank1]: │    92 │   │   │                                                              │
+[rank1]: │    93 │   │   │   return self._gradient_checkpointing_func(partial(super()._ │
+[rank1]: │ ❱  94 │   │   return super().__call__(*args, **kwargs)                       │
+[rank1]: │    95                                                                        │
+[rank1]: │    96                                                                        │
+[rank1]: │    97 @auto_docstring                                                        │
+[rank1]: │                                                                              │
+[rank1]: │ /local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/torch/nn │
+[rank1]: │ /modules/module.py:1775 in _wrapped_call_impl                                │
+[rank1]: │                                                                              │
+[rank1]: │   1772 │   │   if self._compiled_call_impl is not None:                      │
+[rank1]: │   1773 │   │   │   return self._compiled_call_impl(*args, **kwargs)  # type: │
+[rank1]: │   1774 │   │   else:                                                         │
+[rank1]: │ ❱ 1775 │   │   │   return self._call_impl(*args, **kwargs)                   │
+[rank1]: │   1776 │                                                                     │
+[rank1]: │   1777 │   # torchrec tests the code consistency with the following code     │
+[rank1]: │   1778 │   # fmt: off                                                        │
+[rank1]: │                                                                              │
+[rank1]: │ /local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/torch/nn │
+[rank1]: │ /modules/module.py:1786 in _call_impl                                        │
+[rank1]: │                                                                              │
+[rank1]: │   1783 │   │   if not (self._backward_hooks or self._backward_pre_hooks or s │
+[rank1]: │   1784 │   │   │   │   or _global_backward_pre_hooks or _global_backward_hoo │
+[rank1]: │   1785 │   │   │   │   or _global_forward_hooks or _global_forward_pre_hooks │
+[rank1]: │ ❱ 1786 │   │   │   return forward_call(*args, **kwargs)                      │
+[rank1]: │   1787 │   │                                                                 │
+[rank1]: │   1788 │   │   result = None                                                 │
+[rank1]: │   1789 │   │   called_always_called_hooks = set()                            │
+[rank1]: │                                                                              │
+[rank1]: │ /local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/transfor │
+[rank1]: │ mers/utils/generic.py:1023 in wrapped_forward                                │
+[rank1]: │                                                                              │
+[rank1]: │   1020 │   │   │   │   │   ):                                                │
+[rank1]: │   1021 │   │   │   │   │   │   output = orig_forward(*args, **kwargs)        │
+[rank1]: │   1022 │   │   │   │   else:                                                 │
+[rank1]: │ ❱ 1023 │   │   │   │   │   output = orig_forward(*args, **kwargs)            │
+[rank1]: │   1024 │   │   │   │   if not isinstance(output, tuple):                     │
+[rank1]: │   1025 │   │   │   │   │   collected_outputs[key] += (output,)               │
+[rank1]: │   1026 │   │   │   │   elif output[index] is not None:                       │
+[rank1]: │                                                                              │
+[rank1]: │ /local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/transfor │
+[rank1]: │ mers/utils/deprecation.py:172 in wrapped_func                                │
+[rank1]: │                                                                              │
+[rank1]: │   169 │   │   │   │   # DeprecationWarning is ignored by default, so we use  │
+[rank1]: │   170 │   │   │   │   warnings.warn(message, FutureWarning, stacklevel=2)    │
+[rank1]: │   171 │   │   │                                                              │
+[rank1]: │ ❱ 172 │   │   │   return func(*args, **kwargs)                               │
+[rank1]: │   173 │   │                                                                  │
+[rank1]: │   174 │   │   return wrapped_func                                            │
+[rank1]: │   175                                                                        │
+[rank1]: │                                                                              │
+[rank1]: │ /local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/transfor │
+[rank1]: │ mers/models/llama/modeling_llama.py:309 in forward                           │
+[rank1]: │                                                                              │
+[rank1]: │   306 │   │   # Fully Connected                                              │
+[rank1]: │   307 │   │   residual = hidden_states                                       │
+[rank1]: │   308 │   │   hidden_states = self.post_attention_layernorm(hidden_states)   │
+[rank1]: │ ❱ 309 │   │   hidden_states = self.mlp(hidden_states)                        │
+[rank1]: │   310 │   │   hidden_states = residual + hidden_states                       │
+[rank1]: │   311 │   │   return hidden_states                                           │
+[rank1]: │   312                                                                        │
+[rank1]: │                                                                              │
+[rank1]: │ /local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/torch/nn │
+[rank1]: │ /modules/module.py:1775 in _wrapped_call_impl                                │
+[rank1]: │                                                                              │
+[rank1]: │   1772 │   │   if self._compiled_call_impl is not None:                      │
+[rank1]: │   1773 │   │   │   return self._compiled_call_impl(*args, **kwargs)  # type: │
+[rank1]: │   1774 │   │   else:                                                         │
+[rank1]: │ ❱ 1775 │   │   │   return self._call_impl(*args, **kwargs)                   │
+[rank1]: │   1776 │                                                                     │
+[rank1]: │   1777 │   # torchrec tests the code consistency with the following code     │
+[rank1]: │   1778 │   # fmt: off                                                        │
+[rank1]: │                                                                              │
+[rank1]: │ /local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/torch/nn │
+[rank1]: │ /modules/module.py:1786 in _call_impl                                        │
+[rank1]: │                                                                              │
+[rank1]: │   1783 │   │   if not (self._backward_hooks or self._backward_pre_hooks or s │
+[rank1]: │   1784 │   │   │   │   or _global_backward_pre_hooks or _global_backward_hoo │
+[rank1]: │   1785 │   │   │   │   or _global_forward_hooks or _global_forward_pre_hooks │
+[rank1]: │ ❱ 1786 │   │   │   return forward_call(*args, **kwargs)                      │
+[rank1]: │   1787 │   │                                                                 │
+[rank1]: │   1788 │   │   result = None                                                 │
+[rank1]: │   1789 │   │   called_always_called_hooks = set()                            │
+[rank1]: │                                                                              │
+[rank1]: │ /local/scratch/yhu383/InstructERC/venv/lib/python3.10/site-packages/transfor │
+[rank1]: │ mers/models/llama/modeling_llama.py:155 in forward                           │
+[rank1]: │                                                                              │
+[rank1]: │   152 │   │   self.act_fn = ACT2FN[config.hidden_act]                        │
+[rank1]: │   153 │                                                                      │
+[rank1]: │   154 │   def forward(self, x):                                              │
+[rank1]: │ ❱ 155 │   │   down_proj = self.down_proj(self.act_fn(self.gate_proj(x)) * se │
+[rank1]: │   156 │   │   return down_proj                                               │
+[rank1]: │   157                                                                        │
+[rank1]: │   158                                                                        │
+[rank1]: ╰──────────────────────────────────────────────────────────────────────────────╯
+[rank1]: OutOfMemoryError: CUDA out of memory. Tried to allocate 218.00 MiB. GPU 1 has a 
+[rank1]: total capacity of 139.72 GiB of which 206.69 MiB is free. Including non-PyTorch 
+[rank1]: memory, this process has 139.51 GiB memory in use. Of the allocated memory 
+[rank1]: 137.63 GiB is allocated by PyTorch, and 411.70 MiB is reserved by PyTorch but 
+[rank1]: unallocated. If reserved but unallocated memory is large try setting 
+[rank1]: PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See 
+[rank1]: documentation for Memory Management  
+[rank1]: (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[rank0]:[W1120 11:20:06.127482325 ProcessGroupNCCL.cpp:1524] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
